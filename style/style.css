@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #2b2b2b;
+    --cor-secundaria:#F6F6F6;
+    --cor-terciaria:#CAFFCC;
+    --cor-hover: #F6F6F6;
+    --cor-hover-bord: #6EBF7B;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   /* height: 100vh;*/
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 100px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+    font-size: 1.7rem;
+    color:var(--cor-hover);
+}
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/assets/assets_image/Background\ Códigos.png);
+    background-position: center center;
+    background-origin: content-box;
+    
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+.apresentacao__conteudo__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+.titulo__destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.apresentacao__conteudo__texto{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:32px;
+}
+
+.apresentacao__links__navegacao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px; 
+    text-align: center; 
+   
+}
+.apresentacao__links__navegacao__link{
+    display: flex;
+    border: 2px solid var(--cor-terciaria) ;
+    border-radius: 8px;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 16px;
+}
+
+.apresentacao__links__navegacao__link:hover{
+    background-color: var(--cor-terciaria);
+    border: 4px solid var(--cor-hover-bord);
+    color: var(--cor-primaria);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    gap:10px;  
+}
+
+.form label{
+    font-size: 1.5rem; 
+    
+}
+
+.form input, .form textarea{
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    background: transparent;
+    padding: 20px;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+
+}
+.form input:focus, .form textarea:focus {
+    outline: 3px solid var(--cor-hover-bord);
+    color:#CAFFCC;
+    
+}
+
+.form button{
+    border-radius: 8px;
+    background: var(--cor-terciaria);
+    padding: 20px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__imagem{
+    width: 40%;
+}
+.container{
+    color: var(--cor-primaria);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-terciaria);
+    padding: 1% 0% 1% 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+.empresas-parceiras{
+    display: flex;
+    gap:53px;   
+}
+#logoAlura{
+    width: 110%;
+    
+}
+#logoSenac{
+    width: 13%;
+    
+}
+.dev{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+/*Tablet*/
+@media screen {
+    
+}
